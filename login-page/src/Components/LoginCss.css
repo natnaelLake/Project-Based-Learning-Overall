@@ -1,0 +1,388 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
+}
+section{
+  padding-top: 45px;
+  height: 100%;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 650px){
+  section{
+    margin-bottom: 150px;
+  }
+}
+#background-img{
+  height: 100vh;
+  margin-bottom:0px;
+  position: relative;
+}
+
+body {
+  background-image:url('https://raw.githubusercontent.com/Ip-team-work/ip-with-css-and-js/main/resource/image/pexels-pixabay-36717.jpg');
+  background-size: cover;
+ 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+button
+{
+  padding: 5px 15px;
+  background-color: rgba(0,136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover
+{
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+
+
+
+@media (max-width: 650px){
+  #header-img
+  {
+    margin-top: 15px;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 650px){
+  ul button{
+    display: none;
+  }
+}
+.about{
+  font-family: Oswald;
+  font-weight: bold;
+  padding-top: 40px;
+  color:#09c2e7;
+  text-align: center;
+}
+
+.quote
+{
+  font-family: Quicksand;
+  margin-top: -3px;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 10px;
+  color:#09c2e7;
+}
+@media(max-width: 650px)
+{
+  
+  .quote{
+    padding: 10px;
+    color: #09c2e7;
+  }
+  
+  .p1{
+    padding: 0px 10px;
+    color: #09c2e7;
+  }
+}
+
+
+
+
+form{
+  margin: 10px auto;
+  max-width: 400px;
+  padding: 20px 12px 10px 20px;
+}
+
+form label
+{
+  margin:0 0 3px 0;
+  padding:0px;
+  padding-bottom: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+form label p{
+  font-family: 'Open Sans Condensed';
+  text-align: left;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  color: hsl(135, 89%, 45%);
+}
+
+.form-control{
+  box-sizing: border-box;
+  border:1px solid #BEBEBE;
+  padding: 7px;
+  margin: 0px;
+  width: 100%;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password],input[type = email] {
+  width: 80%;
+  padding: 12px 20px;
+  padding-right: 30px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(16, 58, 247);
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+
+
+
+
+/* Extra styles for the cancel button */
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+.container1 {
+  padding: 16px;
+  width:100%;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  
+}
+#submit
+{
+    position: absolute;
+  background-color: #1588A0;
+  font-family: oswald;
+  padding: 8px 15px 8px 15px;
+  border: none;
+  color: #fff;
+}
+  
+
+
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+	display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+	text-transform:uppercase;
+}
+.login-html .tab{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+	font-family: Oswald;
+	padding-top: 5px 15px 5px 15px;
+	color:#0a0c0c;
+	text-align: center;
+	background-color: rgb(6, 201, 201);
+}
+.login-html .tab{
+  margin-right: 15px;
+  margin-left: 150px;
+}
+/* .login-html .tab:hover{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 150px;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+	font-family: Oswald;
+	padding-top: 5px 15px 5px 15px;
+	color:#eef5f5;
+	cursor: pointer;
+	text-align: center;
+	background-color: rgb(6, 201, 55);
+} */
+
+.login-form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.login-form .group{
+	margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+.login-form .group .input,
+.login-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(248, 242, 242, 0.932);
+}
+.login-form .group input[data-type="password"]{
+	text-security:circle;
+	-webkit-text-security:circle;
+}
+.login-form .group .label{
+	
+	font-size:12px;
+}
+.login-form .group .button{
+	background:#1161ee;
+}
+.login-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:#f3f1f1ef;
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+.login-form .group .icon{
+	color:aliceblue !important;
+}
+.login-form .group .check + label{
+	color:rgb(244, 250, 244);
+}
+.login-form .group .check:checked + label{
+	color:#097df1;
+}
+.login-form .group .check:hover + label .icon{
+	background:#097df1;
+	cursor: pointer;
+}
+.login-form .group .check:checked + label .icon{
+	background:#097df1;
+	cursor: pointer;
+}
+.login-form .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+	transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+	transform:rotate(0);
+	color:#1161ee;
+}
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+	text-align:center;
+}
