@@ -51,20 +51,9 @@ button:hover
 
 
 
-@media (max-width: 650px){
-  #header-img
-  {
-    margin-top: 15px;
-    position: relative;
-    margin: 0 auto;
-  }
-}
 
-@media (max-width: 650px){
-  ul button{
-    display: none;
-  }
-}
+
+
 .about{
   font-family: Oswald;
   font-weight: bold;
@@ -131,7 +120,7 @@ form label p{
 }
 body {font-family: Arial, Helvetica, sans-serif;}
 
-/* Full-width input fields */
+
 input[type=text], input[type=password],input[type = email] {
   width: 80%;
   padding: 12px 20px;
@@ -142,15 +131,6 @@ input[type=text], input[type=password],input[type = email] {
   box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
-
-
-
-
-/* Extra styles for the cancel button */
-
-
-/* Center the image and position the close button */
 .imgcontainer {
   text-align: center;
   margin: 24px 0 12px 0;
@@ -249,28 +229,88 @@ span.psw {
 .login-form .group .check{
 	display:none;
 }
-.login-html .tab,
+.login-html .tab,.login-html .tab-tab,
 .login-form .group .label,
 .login-form .group .button{
 	text-transform:uppercase;
 }
-.login-html .tab{
-	font-size:22px;
+
+.login-html .tab {
+	font-size:29px;
 	margin-right:15px;
 	padding-bottom:5px;
 	display:inline-block;
 	border-bottom:2px solid transparent;
 	font-family: Oswald;
-	padding-top: 5px 15px 5px 15px;
+	padding:10px;
 	color:#0a0c0c;
 	text-align: center;
 	background-color: rgb(6, 201, 201);
+  border-radius: 25px;
+}
+.login-html .tab-tab{
+	font-size:29px;
+	margin-right:15px;
+	padding-bottom:5px;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+	font-family: Oswald;
+	padding:10px;
+	color:#0a0c0c;
+	text-align: center;
+	background-color: rgb(6, 201, 201);
+  border-radius: 25px;
 }
 .login-html .tab{
-  margin-right: 15px;
-  margin-left: 150px;
+ margin-left: 90px;
 }
-/* .login-html .tab:hover{
+.login-html .tab-tab{
+  margin-left: 90px;
+ }
+ .login-html .tab:hover{
+  cursor: pointer;
+  background-color: #0a0c0c;
+  color: #fff;
+ }
+ .login-html .tab-tab:hover{
+   cursor: pointer;
+   background-color: #0a0c0c;
+  color: #fff;
+  }
+
+  @media (min-width: 768px) {
+    .login-html .tab{
+      margin-left: 120px;
+      
+     }
+     .login-html .tab-tab{
+      margin-left: 300px; 
+     }
+  }
+  
+  @media (min-width: 992px) {
+    .login-html .tab{
+      margin-left: 80px;
+      
+     }
+     .login-html .tab-tab{
+      margin-left: 350px; 
+     }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .login-html .tab{
+      margin-left: 80px;
+      
+     }
+     .login-html .tab-tab{
+      margin-left: 490px; 
+     }
+  }
+
+  
+
+/* .login-html .tab:active{
 	font-size:22px;
 	margin-right:15px;
 	padding-bottom:5px;
@@ -370,7 +410,7 @@ span.psw {
 .login-form .group .check:checked + label .icon:after{
 	transform:scale(1) rotate(-45deg);
 }
-.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+.login-html .sign-in:checked + .tab-tab + .sign-up + .tab + .login-form .sign-in-htm{
 	transform:rotate(0);
 }
 .login-html .sign-up:checked + .tab + .login-form .sign-up-htm{

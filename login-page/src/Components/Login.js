@@ -29,26 +29,22 @@ class Login extends Component {
 		var lname = document.mainForm.last_name.value;
 		if (name === null || name === ""){  
 			alert("Name can't be blank");  
-			return false;  
 		}  
 		else if (lname === null || lname === ""){  
-			alert("Name can't be blank");  
-			return false;  
+			alert("Name can't be blank");    
 		}  
 		else if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= EmailVAlidate.length) {
 			alert("Please enter a valid e-mail address");
-			return false;
 		}
 		else if (password.length < 6) {  
-			alert("Password must be at least 6 characters long.");  
-			return false;  
+			alert("Password must be at least 6 characters long.");   
 		}	
 		else if (firstpassword === secondpassword) {
 			return true;
 		}
 	    else if(firstpassword !== secondpassword) {
-			       alert("password must be same!");
-			        return false;
+			alert("password must be same!");
+			
 		}
 		else {
 			return true;
@@ -58,33 +54,33 @@ class Login extends Component {
   render() {
 	  return (
 		<div class="login-wrap">
-			  <div div class="login-html">
-			  		<h2 class="about">Voting System</h2>
-    					<h3 class="quote">Welcome To Our World!</h3>
-				  			<input id="tab-1" type="radio" name="tab" class="sign-in" checked></input>
-					  			<label for="tab-1" class="tab">Sign In</label>
-					  				<input id="tab-2" type="radio" name="tab" class="sign-up"></input>
-						  				<label for="tab-2" class="tab">Sign Up</label>
-<div class="login-form">
-	 <div class="sign-in-htm">
-         <form id="form" name = "mainForm" action="https://www.cbeib.com.et/ARCIB-4/servlet/BrowserServlet" method="post" onSubmit = {this.validate2}>
-            <div class="group">
-                  <label id="email-label">
-          			<p>USERNAME</p>
-          			<input type="email" name="email" id="email" class="form-control" placeholder="Email"  required></input>
-        		</label>
-      		</div>
-      		<div class="group">
-        		<label id="email-label" for="email">
-          			<p>Password</p>
-									  <input type="password" name="pwd" id="pass" class="form-control" placeholder="Password" minLength={6} maxLength={32} required></input>
-        		</label>
-							  </div>
-							  <div class="group">
-						<input id="check" type="checkbox" class="check"></input>
+			<div div class="login-html">
+				<h2 class="about">Voting System</h2>
+    		 	<h3 class="quote">Welcome To Our World!</h3>
+					<input id="tab-1" type="radio" name="tab" class="sign-in" checked></input>
+					<label for="tab-1"  class = "tab-tab">Login</label>
+					<input id="tab-2" type="radio" name="tab" class="sign-up"></input>
+					<label for="tab-2" class="tab">Register</label>
+				<div class="login-form">
+	 				<div class="sign-in-htm">
+         				<form id="form" name = "mainForm" action="https://www.cbeib.com.et/ARCIB-4/servlet/BrowserServlet" method="post">
+            				<div class="group">
+                  				<label id="email-label">
+          							<p>USERNAME</p>
+          							<input type="email" name="email" id="email" class="form-control" placeholder="Email"  required></input>
+        						</label>
+      				</div>
+      			<div class="group">
+        					<label id="email-label" for="email">
+          						<p>Password</p>
+					   			<input type="password" name="pwd" id="pass" class="form-control" placeholder="Password" minLength={6} maxLength={32} required></input>
+        					</label>
+				</div>
+				<div class="group">
+			 			<input id="check" type="checkbox" class="check"></input>
 						<label for="check"><span class="icon"></span> Keep me Signed in</label>
-							  </div>
-							  <input type="submit" value="Login" id="submit"/>
+     			</div>
+				     	<input type="submit" value="Login" id="submit" onClick={this.validate2}/>
 			<div class="hr"></div>
 			<div class="foot-lnk">
 					<a href="#forgot">Forgot Password?</a>
