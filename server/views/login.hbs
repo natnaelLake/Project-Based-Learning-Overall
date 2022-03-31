@@ -1,0 +1,31 @@
+<form action="/login" method="post">
+    <div>
+        <h1>Login</h1>
+    </div>
+    {{#if message}}
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>{{message}}</strong> 
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {{/if}}
+    <div class="form-group">
+        <label>Username: </label>
+        <input type="text"  
+        name = "username" id = "username"
+        placeholder="Enter username" required>
+    </div>
+
+    <div class="form-group">
+        <label>Password: </label>
+        <input type="password"  
+        name = "password" id = "password"
+        placeholder="Enter password" required>
+    </div>
+    <div>
+        <input type="submit" value="Login" />
+    </div>
+    <br/>
+    <div class="register">
+        <a href="/register">Register</a>
+    </div>
+</form> 
